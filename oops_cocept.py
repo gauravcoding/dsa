@@ -67,3 +67,36 @@ class Dog(Animal):
     def sounds(self):
         print(f"Dog oftenly speaks {self.speak}")
 D1=Dog("woof")
+
+
+
+
+# inherit
+class Employe:
+    def __init__(self,id,name):
+        self.id=id
+        self.name=name
+class NewEmploye(Employe):
+    def __str__(self):
+        return f"Employee ID: {self.id}, Name: {self.name}"
+
+
+emp1=NewEmploye(10,"Gaurav")
+print(emp1)
+
+# encapsulation
+class BankAccount:
+    def __init__(self,account,balance=0):
+        self.account=account
+        self.balance=balance
+    def deposit(self,amount):
+        self.balance+=amount
+
+    def withdraw(self,amount):
+        self.balance=amount
+
+    def info(self):
+        return self.balance
+account=BankAccount(1111313)
+account.deposit(5000)
+print(account.info())
