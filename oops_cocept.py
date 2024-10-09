@@ -93,10 +93,13 @@ class BankAccount:
         self.balance+=amount
 
     def withdraw(self,amount):
-        self.balance=amount
-
+        if amount<self.balance:
+            self.balance-=amount
+        else:
+            print("Insufficient Balance in your account")
     def info(self):
         return self.balance
 account=BankAccount(1111313)
-account.deposit(5000)
+account.deposit(3000)
 print(account.info())
+account.withdraw(4000)
