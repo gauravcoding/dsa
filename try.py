@@ -20,3 +20,13 @@ def division(A):
         print(error)
         print("Invalid input")
 division(5)
+
+
+#typeError
+def add(a,b):
+    try:
+        c=a+b
+        print(c)
+    except TypeError:
+        print("you can't add int wth str")
+print(add(1,10))
