@@ -26,3 +26,12 @@ class Value:
         return cls(name,age)
 e1=Value.employe("gaurav",21)
 print(e1.info())
+
+
+#generator
+def generate_num():
+
+    for i in range(5):
+        yield i
+for num in generate_num():
+    print(num)
