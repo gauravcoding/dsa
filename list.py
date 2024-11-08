@@ -7,6 +7,17 @@ import logging
 # Configure logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
+
+
+
+
+
+
+
+
+
+
+
 def calculate(a, b):
     logging.debug(f'Calculating: {a} + {b}')
     return a + b
@@ -22,3 +33,15 @@ def my_dict(list):
         dict1[ele]="hi"
     return dict1
 logging.info(my_dict([1,1,2,3,4,5]))
+list=[1,2,3,4,5]
+list.remove(5)
+# print(list)
+def swap(a,b):
+    temp=b
+    b=a
+    a=temp
+    return a,b
+logging.info(swap(10,12))
+def poitive(list):
+    new_list=[]
+
