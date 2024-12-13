@@ -1,12 +1,15 @@
 
-def cal(a,b):
+def cal(a, b):
     try:
-        print(a/b)
+        print(a / b)
     except ZeroDivisionError:
-        print("dinometer can't be zero")
-print(cal(10,1))
+        print("Denominator can't be zero")
+    except TypeError:
+        print("Put a numeric value")
+    except ValueError:
+        print("Put an integer value")
 
-
+print(cal(10, "a"))
 
 
 def division(A):
