@@ -13,4 +13,41 @@ def age_checker(func):
 def ForVote(age):
     return "You can vote"
 
-print(ForVote(17))  # Call the decorated function
+print(ForVote(18))  # Call the decorated function
+
+
+class Parent:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f"Hello {self.name} from Parent")
+
+
+class Child(Parent):
+    def __init__(self, name):
+        super().__init__(name)
+
+    def greet(self):
+        print(f"Hello {self.name} from Child")
+
+
+obj = Child("Gaurav")
+
+obj.greet()
+obj.greet()
+
+
+
+class person:
+    name="Gaurav singh"
+    occ="Python developer"
+    def __init__(self,name,occ):
+        self.name=name
+        self.occ=occ
+    def info(self):
+        print(f"{self.name} is a {self.occ} ")
+a=person("Gaurav","Software developer")
+a.info()
+b=person("Akriti","HR")
+b.info()
