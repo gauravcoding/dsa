@@ -119,9 +119,26 @@ print(pos_neg([10, -21, 4, -45, 66, -93, 1]))
 
 
 
+def common_number(list1,list2):
+    result=[]
+    for item in list1:
+        for ele in list2:
+            if item == ele:
+                result.append(ele)
+            else:
+                result
+    return result
+print(common_number([15, 9, 10, 56, 23, 78, 5, 4, 9],[9, 4, 5, 36, 47, 26, 10, 45, 87]))
 
-
-
+def remove_none(list):
+    new_list=[]
+    for item in list:
+        if item!=None:
+            new_list.append(item)
+        else:
+            list
+    return new_list
+print(remove_none([1, 4, 5, 8,None]))
 
 
 
