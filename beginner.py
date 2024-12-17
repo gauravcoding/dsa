@@ -38,7 +38,6 @@ obj.greet()
 obj.greet()
 
 
-
 class person:
     name="Gaurav singh"
     occ="Python developer"
@@ -51,3 +50,27 @@ a=person("Gaurav","Software developer")
 a.info()
 b=person("Akriti","HR")
 b.info()
+
+
+
+
+
+
+def half_upper(str):
+    length=len(str)//2
+    return str[:length+1].upper() + str[length+1:]
+print(half_upper("geeksforgeeks"))
+
+
+
+def num_char(str):
+    numberAvl=False
+    charAvl=False
+    for item in str:
+        if item.isalpha():
+            charAvl=True
+        if item.isdigit():
+            numberAvl=True
+    return charAvl and numberAvl
+print(num_char("thishasboth29"))
+print(num_char("geeksforgeeks"))
