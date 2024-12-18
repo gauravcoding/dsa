@@ -159,3 +159,5 @@ print(remove_none([1, 4, 5, 8,None]))
 
 
 
+
+
