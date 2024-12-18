@@ -74,3 +74,21 @@ def num_char(str):
     return charAvl and numberAvl
 print(num_char("thishasboth29"))
 print(num_char("geeksforgeeks"))
+
+
+def max_count(str):
+    str=str.replace(" ","")
+    freq_dict = {}
+
+    for ele in str:
+        if ele in freq_dict:
+            freq_dict[ele] += 1
+        else:
+            freq_dict[ele] = 1
+
+    max_key = max(freq_dict, key=freq_dict.get)
+
+    return max_key, freq_dict[max_key]
+str="i am using python for so long"
+char, count = max_count(str)
+print(f"The character '{char}' repeat {count} times.")
