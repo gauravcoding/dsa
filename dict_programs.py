@@ -103,11 +103,61 @@ def guess_number():
             except ValueError:
                   print("Error! Invalid input")
       print("You're out of input")
-guess_number()
+#guess_number()
 
 
+def prime_check(num):
+      for item in range(2,int(num**0.5)+1):
+            if num%item==0:
+                  return f"{num} is Not Prime number !"
+      return f"{num} is prime number !"
+logging.info(prime_check(17))
+
+def char_count(str):
+      list=[]
+      dict={}
+      for item in str:
+            if item in dict:
+                  dict[item]+=1
+            else:
+                  dict[item]=1
+      return dict
+logging.info(char_count("Hello"))
 
 
+def dict_to_list(dict):
+      list=[]
+      for items in dict:
+            list.append(items)
+      return list
+dict={"Alice": 20,"Bob": 22,"Charlie": 21,"Diana": 23}
+list=dict_to_list(dict)
+print(list)
+
+
+def list_to_dict(list):
+      dict={}
+      for index,ele in enumerate(list):
+            dict[index] = ele
+      return dict
+list=[1,2,3,4,5,6 ]
+dict=list_to_dict(list)
+print(dict)
+
+def str_to_list(str):
+      list=[]
+      for ele in str:
+            list.append(ele)
+      return list
+logging.info(str_to_list("Gaurav"))
+
+
+def list_to_string(list):
+      str=""
+      for ele in list:
+            str+=ele
+      return str
+logging.info(list_to_string(["g","u","r","u"]))
 
 
 
