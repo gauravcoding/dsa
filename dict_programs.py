@@ -160,6 +160,35 @@ def list_to_string(list):
 logging.info(list_to_string(["g","u","r","u"]))
 
 
+def add(a,b):
+      return a+b
+logging.info(add(11,10))
+
+
+def palindrome(str):
+      if str==str[::-1]:
+            return "Given string is Palindrome"
+      else:
+            return "Not A Palindrome String"
+logging.info(palindrome("madam"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
