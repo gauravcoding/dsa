@@ -38,3 +38,128 @@ A1=Bankaccount("Gaurav",7419)
 A1.ShowBalance()
 A1.debit(11000)
 A1.ShowBalance()
+
+class Internet_banking:
+    def __init__(self, ID, Password):
+        self.ID = ID
+        self.__Password = Password
+
+    def show_details(self):
+        print(f"Your ID is {self.ID} and your password is {self.get_password()}")
+
+    def get_password(self):
+        return self.__Password
+
+customer1 = Internet_banking("gaurav89", "Gaurav@122")
+customer1.show_details()
+
+def sum_marks(dict):
+      sum_dict={}
+      for name,values in dict.items():
+            sum_dict[name]=sum(values)
+      return sum_dict
+result=sum_marks({"Gaurav":[10,11,12],"Raman":[15,16,17]})
+print(result)
+result["Gaurav"]=11
+print(result)
+
+
+
+def make_changes(Dict):
+      Dict["Gaurav"]=[33,44,55]
+      Dict["Raman"].append(33)
+      return Dict
+print(make_changes({"Gaurav":[10,11,12],"Raman":[15,16,17]}))
+
+
+class A:
+      VarA="hello this is VarA"
+class B:
+      VarB="hello this is VarB"
+class C(A,B):
+      VarC="This is Var c"
+C1=C()
+logging.info(C1.VarA)
+
+#Guessing Number
+
+import random
+def guess_number():
+      guess_left=5
+      number=random.randint(1,101)
+      print("Hello welcome to the game")
+
+      while guess_left>0:
+            try:
+                  guess_number=int(input("Enter a number: "))
+                  if guess_number<number:
+                        print("Input is low!")
+                  elif guess_number>number:
+                        print("Input is high!")
+                  else:
+                        print(f"Congratulation your input is right in {7-guess_left+1}")
+                        return
+                  guess_left-=1
+            except ValueError:
+                  print("Error! Invalid input")
+      print("You're out of input")
+guess_number()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
